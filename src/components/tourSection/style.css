@@ -24,3 +24,13 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
+.tourInfo {
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+}
+
+.tourImage {
+  display: block;
+}
