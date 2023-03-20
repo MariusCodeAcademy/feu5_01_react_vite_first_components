@@ -3,12 +3,14 @@ import Hero from './components/Hero';
 import ThreeList from './components/three/ThreeList';
 import './App.css';
 
+const titleArr = ['About Us', 'Kompanija', 'Kontaktai'];
+
 function App() {
   return (
-    <div className="container">
+    <div className='container'>
       <Header />
       <Hero />
-      <ThreeList />
+      <ThreeList list={titleArr} />
     </div>
   );
 }
