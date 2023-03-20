@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* headeris */
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  background-color: #fff;
+  padding: 10px;
+  font-weight: normal;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.logo span {
+  font-weight: bold;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* nav */
+.mainNav {
+  background-color: #333;
+  color: #fff;
+}
+.navLink {
+  padding: 8px 16px;
+  display: inline-block;
+}
+.navLink:hover {
+  background-color: #797575;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* gridThree */
+
+.gridThree {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
 }
 
-.card {
-  padding: 2em;
+.sectionPart {
+  background-color: #fff;
+  padding: 15px;
 }
 
-.read-the-docs {
-  color: #888;
+.sectionPart h3 {
+  font-weight: normal;
+  font-size: 30px;
+  margin-bottom: 0.4em;
+}
+.sectionPart p {
+  line-height: 1.5;
 }
